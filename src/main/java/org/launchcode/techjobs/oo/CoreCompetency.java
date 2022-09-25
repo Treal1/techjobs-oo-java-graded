@@ -46,9 +46,10 @@ public class CoreCompetency {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+//    public void setId(int id) {
+//        this.id = id;
+//    }
+    //got rid of setID to prevent users from changing the id value
 
     public String getValue() {
         return value;
