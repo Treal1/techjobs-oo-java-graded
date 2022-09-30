@@ -15,8 +15,18 @@ import static org.junit.Assert.assertFalse;
  * Created by LaunchCode
  */
 @RunWith(JUnit4.class)
+
 public class JobTest {
-
+    //@test
+    public JobTest(){
+//        return JobTest;
+    }
+    //    public static void main (String[] args) {
+//        JobTest a1 = new JobTest();
+//        JobTest a2 = new JobTest();
+////        Assert.assertNotEquals(JobTest(a1),JobTest(a2));
+//
+//    }
     @Test
     public void testSettingJobId(){
         Job job1 = new Job();
@@ -25,16 +35,6 @@ public class JobTest {
 //        new Job();
         assertNotEquals(job1.getId(), job2.getId());
     }
-
-    @Test
-    public void testSettingJobId(){
-        Job job1 = new Job();
-        Job job2 = new Job();
-//        new Job();
-//        new Job();
-        assertNotEquals(job1.getId(), job2.getId());
-    }
-
     @Test
     public void testJobConstructorSetsAllFields(){
         Job testJob = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
@@ -89,7 +89,4 @@ public class JobTest {
                 "Core Competency: "+ job.getCoreCompetency() + "\n";
         assertEquals(job.toString(), answer);
     }
-
 }
-
-
